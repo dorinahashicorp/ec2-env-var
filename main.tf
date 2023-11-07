@@ -12,7 +12,7 @@ terraform {
   }
 
 provider "aws" {
-  region     = "us.west.2"
+  region     = "us-west-2"
   access_key = data.hcp_vault_secrets_secret.access_key.secret_value
   secret_key = data.hcp_vault_secrets_secret.secret_key.secret_value
 }
